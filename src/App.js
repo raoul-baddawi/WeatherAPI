@@ -123,7 +123,16 @@ class App extends React.Component {
       this.state.image118 = partC;
     }
 
+    else if (weather && weather.weather[0].description === "moderate rain") {
+      this.result = "off-cloudy";
+      this.state.image111 = rain;
+      this.state.image112 = rain;
+      this.state.image113 = cloudy;
+      this.state.image114 = fog;
+      this.state.image118 = rain;
+    }
 
+    
     return (
       <div className="Container">
         <div className="App-header">
